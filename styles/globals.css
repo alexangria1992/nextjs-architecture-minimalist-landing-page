@@ -7,6 +7,12 @@
   --light: #ffffff;
   --padding-section: 0rem 0;
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --padding-section: 2rem 0;
+  }
+}
 * {
   box-sizing: border-box;
 }
