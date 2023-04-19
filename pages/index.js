@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Featured from "./Components/Featured";
+import Step from "./Components/Step";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Featured />
+      <Step />
     </>
   );
 }
