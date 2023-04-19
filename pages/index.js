@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Featured from "./Components/Featured";
 import Step from "./Components/Step";
+import Projects from "./Components/Projects";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Featured />
       <Step />
+      <Projects />
     </>
   );
 }
