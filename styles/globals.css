@@ -5,7 +5,7 @@
   --primary: #fca311;
   --secondary: #e5e5e5;
   --light: #ffffff;
-  --padding-section: 0rem 0;
+  --padding-section: 8rem 0;
 }
 
 @media screen and (max-width: 768px) {
