@@ -8,6 +8,7 @@ import Featured from "./Components/Featured";
 import Step from "./Components/Step";
 import Projects from "./Components/Projects";
 import Clients from "./Components/Clients";
+import Concepts from "./Components/Concepts";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Step />
       <Projects />
       <Clients />
+      <Concepts />
     </>
   );
 }
