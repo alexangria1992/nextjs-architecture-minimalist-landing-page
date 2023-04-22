@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
 import Image from "next/image";
+import OutsideClickHandler from "react-outside-click-handler";
 
 export default function Navbar() {
   const [offCanvas, setOffCanvas] = useState(false);
@@ -9,14 +10,16 @@ export default function Navbar() {
       <nav className={style.nav}>
         <a href="">Arx</a>
         <Image src="/img/logo.svg" width={32} height={32} alt="" />
-        <Image
-          src="/img/menu.svg"
-          width={32}
-          height={32}
-          style={{ cursor: "pointer" }}
-          onClick={() => setOffCanvas(true)}
-          alt=""
-        />
+        <OutsideClickHandler onOutsideClick={() => setOffCanvas(false)}>
+          <Image
+            src="/img/menu.svg"
+            width={32}
+            height={32}
+            style={{ cursor: "pointer" }}
+            onClick={() => setOffCanvas(true)}
+            alt=""
+          />
+        </OutsideClickHandler>
       </nav>
 
       <div className={`${style.canvas_menu} ${offCanvas ? style.active : ""} `}>
@@ -62,16 +65,24 @@ export default function Navbar() {
           <div className={style.menu}>
             <h4>Menu</h4>
             <p style={{ marginTop: 0 }}>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={() => setOffCanvas(false)}>
+                Home
+              </a>
             </p>
             <p>
-              <a href="#featured">Featured</a>
+              <a href="#featured" onClick={() => setOffCanvas(false)}>
+                Featured
+              </a>
             </p>
             <p>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={() => setOffCanvas(false)}>
+                Projects
+              </a>
             </p>
             <p>
-              <a href="#testimonials">Testimonials</a>
+              <a href="#testimonials" onClick={() => setOffCanvas(false)}>
+                Testimonials
+              </a>
             </p>
           </div>
         </div>

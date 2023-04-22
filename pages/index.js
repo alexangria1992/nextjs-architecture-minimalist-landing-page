@@ -11,10 +11,12 @@ import Clients from "./Components/Clients";
 import Concepts from "./Components/Concepts";
 import Footer from "./Components/Footer";
 const inter = Inter({ subsets: ["latin"] });
+import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   return (
     <>
+      <ScrollToTop smoth color="#14213d" style={{ borderRadius: 0 }} />
       <Navbar />
       <Hero />
       <Featured />

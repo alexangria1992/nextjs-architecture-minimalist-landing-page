@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 export default function Clients() {
   return (
-    <div className={style.clients} id="testimonial">
+    <div className={style.clients} id="testimonials">
       <div className={style.clients_section}>
         <div>
           <h1>
