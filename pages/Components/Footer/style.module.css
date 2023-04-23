@@ -1,5 +1,5 @@
 .footer {
-  border: 1px solid darkgrey;
+  /* border: 1px solid darkgrey; */
   padding-bottom: 1.5rem;
   padding: var(--padding-section);
 }
@@ -15,20 +15,20 @@
 }
 
 .footer_item {
-  border: 1px solid darkgreen;
+  /* border: 1px solid darkgreen; */
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   gap: 4rem;
 }
 
 .footer_item > div:nth-child(1) {
-  border: 1px solid darkred;
+  /* border: 1px solid darkred; */
   display: flex;
   flex-direction: column;
 }
 
 .footer_item > div:nth-child(1) > div {
-  border: 1px solid darkgreen;
+  /* border: 1px solid darkgreen; */
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -37,7 +37,7 @@
 .footer_item > div:nth-child(2) {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid darkmagenta;
+  /* border: 1px solid darkmagenta; */
   gap: 4rem;
 }
 

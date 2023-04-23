@@ -9,7 +9,7 @@
 }
 
 .projects {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   display: flex;
   gap: 1rem;
 }
@@ -22,7 +22,7 @@
   position: relative;
   flex: 0;
   transition: all 0.7s ease-in-out;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .project h2,

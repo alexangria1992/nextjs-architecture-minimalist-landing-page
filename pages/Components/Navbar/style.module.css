@@ -1,5 +1,5 @@
 .nav {
-  border: solid 1px green;
+  /* border: solid 1px green; */
   display: flex;
   justify-content: space-between;
   align-items: center;
