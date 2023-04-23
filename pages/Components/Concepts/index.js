@@ -5,7 +5,7 @@ export default function Concepts() {
   return (
     <div className={style.concept}>
       <h1>
-        Have an amazing concept, <br /> Let's talk{" "}
+        Have an amazing concept, <br /> Let&apos;s talk{" "}
       </h1>
       <div className={style.email_box}>
         <input type="email" placeholder="name@email.com" />
